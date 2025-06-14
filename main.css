@@ -71,6 +71,10 @@ footer {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   margin-bottom: 2rem;
+  transition: transform 0.3s ease, opacity 0.6s ease;
+}
+.photo-of-day img:hover {
+  transform: scale(1.015) translateY(-2px);
 }
 .debug-tools {
   margin: 2rem auto;
@@ -85,6 +89,6 @@ footer {
 .message--special {
   font-family: Georgia, serif;
   font-style: italic;
-  color: #d14a61; /* A warm, noticeable shade */
+  color: #6d1730; /* deeper, elegant wine tone */
   font-size: 1.4rem;
 }
