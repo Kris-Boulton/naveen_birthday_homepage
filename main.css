@@ -65,7 +65,8 @@ footer {
 }
 
 .photo-of-day img {
-  max-width: 90%;
+  max-width: 100%;
+  max-height: 80vh;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
