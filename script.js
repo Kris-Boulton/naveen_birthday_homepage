@@ -9,7 +9,7 @@ const messages = {
   "03-08": "Celebrating you on International Women’s Day — you inspire me daily =)",
   "05-12": "Happy me day!",
   "06-07": "Today we made a house a home — not with furniture, but with us. I never stopped feeling that first-night glow.",
-  "06-15": "Happy Birthday! The world became brighter the day you arrived.",
+  "06-14": "Happy Birthday! The world became brighter the day you arrived.",
   "06-21": "The longest day of the year — and still not enough hours to tell you how much I love you.",
   "07-02": "Half the year behind us, half still to come — and every part is better with you beside me.",
   "12-17": "The day I asked, and you said yes — to me, to us, to forever. I still can’t believe I get to live in that answer.",
