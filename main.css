@@ -1,0 +1,65 @@
+/* Simple, warm styling */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+
+:root {
+  --accent: #ff5a5f; /* soft red-pink */
+  --bg: #fffefc;
+  --text: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  text-align: center;
+}
+
+.banner {
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, var(--accent) 0%, #ffbcbc 100%);
+  color: white;
+}
+.banner h1 {
+  margin-top: 0;
+  font-size: 2.5rem;
+}
+.message {
+  font-size: 1.25rem;
+  margin: 0.5rem 0 0;
+}
+
+.gallery-title {
+  margin: 2.5rem 0 1rem;
+  font-size: 2rem;
+  color: var(--accent);
+}
+
+.gallery {
+  display: grid;
+  gap: 1rem;
+  padding: 0 1rem 3rem;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+.gallery img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.15);
+  transition: transform 0.2s ease;
+}
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+footer {
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  background: #fafafa;
+  color: #666;
+}
