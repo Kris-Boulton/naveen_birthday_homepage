@@ -71,3 +71,13 @@ footer {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   margin-bottom: 2rem;
 }
+.debug-tools {
+  margin: 2rem auto;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #999;
+}
+#photoSelect {
+  margin-left: 0.5rem;
+  padding: 0.25rem;
+}

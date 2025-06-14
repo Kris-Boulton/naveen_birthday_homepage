@@ -30,6 +30,7 @@ function setYear() {
   document.getElementById("year").textContent = new Date().getFullYear();
 }
 
+
 function setDailyPhoto() {
   console.log("photoList:", photoList);
   if (!Array.isArray(photoList) || photoList.length === 0) return;
@@ -45,6 +46,41 @@ function setDailyPhoto() {
   img.src = `photos/${chosenPhoto}`;
   img.alt = `Memory ${index + 1}`;
 }
+
+function setupDebugSelector() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const debugMode = urlParams.get("debug") === "true";
+
+  if (!debugMode) return; // Exit early if not in debug mode
+
+  const selector = document.getElementById("photoSelect");
+  if (!selector || !Array.isArray(photoList)) return;
+
+  photoList.forEach((filename, i) => {
+    const opt = document.createElement("option");
+    opt.value = filename;
+    opt.textContent = `${i + 1}: ${filename}`;
+    selector.appendChild(opt);
+  });
+
+  selector.addEventListener("change", (e) => {
+    const selected = e.target.value;
+    if (!selected) return;
+    const img = document.getElementById("daily-photo");
+    img.src = `photos/${selected}`;
+    img.alt = `Debug: ${selected}`;
+  });
+
+  // Show the dropdown now that it's active
+  document.querySelector(".debug-tools").style.display = "block";
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  setDailyMessage();
+  setDailyPhoto();
+  setYear();
+  setupDebugSelector(); // ← add this here
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   setDailyMessage();
