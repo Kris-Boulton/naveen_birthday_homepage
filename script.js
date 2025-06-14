@@ -6,7 +6,7 @@ const messages = {
   "01-01": "A new year, a new chapter—you're the hero of every page.",
   "02-14": "Happy Valentine’s Day! My love only grows stronger. ❤️",
   "03-08": "Celebrating you on International Women’s Day—you inspire me daily.",
-  "06-14": "Happy Birthday! The world became brighter the day you arrived.",
+  "06-15": "Happy Birthday! The world became brighter the day you arrived.",
   "12-25": "Merry Christmas, my favourite gift is you!",
   // …add as many fixed dates as you like
 };
