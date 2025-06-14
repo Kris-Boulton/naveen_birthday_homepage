@@ -22,25 +22,10 @@
   </header>
 
   <main>
-    <h2 class="gallery-title">Memories Through the Years</h2>
-    <div class="gallery" id="photo-gallery">
-      <!-- EXAMPLE ENTRIES – duplicate for each photo you add -->
-      <a
-        href="photos/2005-wedding.jpg"
-        data-lightbox="yearly-gallery"
-        data-title="Our wedding day, 2005"
-      >
-        <img src="photos/2005-wedding.jpg" alt="Wedding 2005" />
-      </a>
-
-      <a
-        href="photos/2010-holiday.jpg"
-        data-lightbox="yearly-gallery"
-        data-title="Greece trip, 2010"
-      >
-        <img src="photos/2010-holiday.jpg" alt="Holiday 2010" />
-      </a>
-      <!-- Repeat ↑ for every picture in photos/ -->
+    <h2 class="gallery-title">Photo of the Day</h2>
+    <div class="photo-of-day">
+      <img id="daily-photo" src="" alt="Photo of the day" />
+    </div>
     </div>
   </main>
 
@@ -49,6 +34,7 @@
   </footer>
 
   <!-- Your custom script + Lightbox2 JS -->
+  <script src="photoList.js"></script>
   <script src="script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 </body>
