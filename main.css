@@ -82,3 +82,9 @@ footer {
   margin-left: 0.5rem;
   padding: 0.25rem;
 }
+.message--special {
+  font-family: Georgia, serif;
+  font-style: italic;
+  color: #d14a61; /* A warm, noticeable shade */
+  font-size: 1.4rem;
+}
