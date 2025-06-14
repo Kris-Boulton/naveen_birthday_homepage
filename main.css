@@ -44,7 +44,7 @@ h1, h2, h3 {
 .message--special {
   font-style: italic;
   font-weight: 400;
-  color: #273c75; /* try #6a1b4d or #2c3e50 if you prefer */
+  color: #5b2245; /* try #6a1b4d or #2c3e50 if you prefer */
 }
 
 .gallery-title {
