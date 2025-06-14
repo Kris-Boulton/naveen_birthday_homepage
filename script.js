@@ -30,7 +30,24 @@ function setYear() {
   document.getElementById("year").textContent = new Date().getFullYear();
 }
 
+function setDailyPhoto() {
+  console.log("photoList:", photoList);
+  if (!Array.isArray(photoList) || photoList.length === 0) return;
+
+  const today = new Date();
+  const dayOfYear = Math.floor(
+    (today - new Date(today.getFullYear(), 0, 0)) / 86400000
+  );
+  const index = dayOfYear % photoList.length;
+  const chosenPhoto = photoList[index];
+
+  const img = document.getElementById("daily-photo");
+  img.src = `photos/${chosenPhoto}`;
+  img.alt = `Memory ${index + 1}`;
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   setDailyMessage();
+  setDailyPhoto();
   setYear();
 });
